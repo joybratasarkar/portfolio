@@ -1,0 +1,18 @@
+ ○ Compiling / ...
+Error: Cannot apply unknown utility class `bg-primary-600`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at onInvalidCandidate (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:18:1312)
+    at ge (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:13:29803)
+    at /home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:18:373
+    at I (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:3:1656)
+    at je (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:18:172)
+    at bi (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:35:780)
+    at async yi (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:35:1123)
+    at async _r (/home/joy/Desktop/portfolio/node_modules/@tailwindcss/node/dist/index.js:10:3384)
+    at async p (/home/joy/Desktop/portfolio/node_modules/@tailwindcss/postcss/dist/index.js:10:4019)
+    at async Object.Once (/home/joy/Desktop/portfolio/node_modules/@tailwindcss/postcss/dist/index.js:10:4290)
+    at async LazyResult.runAsync (/home/joy/Desktop/portfolio/node_modules/next/node_modules/postcss/lib/lazy-result.js:261:11)
+    at async Span.traceAsyncFn (/home/joy/Desktop/portfolio/node_modules/next/dist/trace/trace.js:154:20)
+    at async /home/joy/Desktop/portfolio/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
+    at async Span.traceAsyncFn (/home/joy/Desktop/portfolio/node_modules/next/dist/trace/trace.js:154:20)
+ ✓ Compiled / in 6.5s (486 modules)
+ GET / 200 in 6942ms
