@@ -7,10 +7,10 @@ const About = () => {
   const [visibleCards, setVisibleCards] = useState<number[]>([])
   
   const skills = [
-    { category: 'AI & Machine Learning', items: ['Google Vertex AI', 'LangChain', 'LangGraph', 'PyTorch', 'NLP', 'RAG Systems', 'Whisper', 'BLIP'] },
+    { category: 'AI & Machine Learning', items: ['Google Vertex AI', 'LangChain', 'LangGraph', 'Silero VAD', 'Wav2Vec2', 'PyTorch', 'NLP', 'RAG Systems', 'Turn Detection'] },
     { category: 'Languages & Frameworks', items: ['Python', 'JavaScript', 'TypeScript', 'FastAPI', 'Angular', 'React', 'Node.js', 'Django'] },
-    { category: 'Infrastructure & Systems', items: ['Redis', 'MongoDB', 'Docker', 'WebSocket', 'Microservices', 'CI/CD', 'Distributed Systems'] },
-    { category: 'Tools & Technologies', items: ['Git', 'Celery', 'FAISS', 'Streamlit', 'OpenCV', 'Vercel', 'Railway', 'Linux'] }
+    { category: 'Programming Fundamentals', items: ['Data Structures & Algorithms', 'System Design', 'Problem Solving', 'API Design'] },
+    { category: 'Infrastructure & Systems', items: ['Redis', 'Celery', 'Docker', 'Microservices', 'CI/CD', 'MongoDB', 'WebSocket', 'Distributed Systems'] }
   ]
 
   useEffect(() => {
@@ -27,13 +27,13 @@ const About = () => {
       title: 'Full Stack AI/ML Engineer',
       company: 'Impacteers',
       period: 'Dec 2024 - Present',
-      description: 'Leading 4-engineer team to build breakthrough conversational AI platform with real-time processing. Engineered system serving 10K+ users with sub-50ms latency, implemented smart turn detection and intelligent conversation orchestration.'
+      description: 'Leading 4-engineer team building breakthrough conversational AI platform with real-time processing. Architected distributed system supporting 100+ concurrent connections with <50ms WebSocket routing. Implemented smart turn detection using Silero VAD and intelligent conversation orchestration via LangGraph state machine. Optimized tensor reuse achieving <100ms audio processing and 200MB per worker efficiency.'
     },
     {
       title: 'Software Engineer - Frontend',
       company: 'Supersourcing',
       period: 'Dec 2022 - Nov 2024',
-      description: 'Shipped 3 production SaaS platforms including AI interview system, ATS, and vendor management tool. Implemented NgRx state management, led technical interviews, and enhanced user experience under heavy load.'
+      description: 'Shipped 3 production SaaS platforms: AI interview system, ATS, and vendor management tool. Implemented NgRx state management, lazy loading, and component-level caching for performance optimization. Led technical interviews, conducted code reviews, and enhanced user experience under heavy load while ensuring maintainability and scalability.'
     }
   ]
 
@@ -52,11 +52,12 @@ const About = () => {
             About Me
           </h2>
           <p className={`text-xl lg:text-2xl text-neutral-600 dark:text-neutral-400 max-w-4xl mx-auto leading-relaxed ${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-            Engineering intelligent systems that transform how businesses operate. Specializing in{' '}
-            <span className="text-primary-600 dark:text-primary-400 font-semibold">AI-powered applications</span>{' '}
-            and{' '}
-            <span className="text-accent-600 dark:text-accent-400 font-semibold">high-performance architectures</span>{' '}
-            that scale to serve thousands.
+            I'm a Full Stack Engineer who specializes in{' '}
+            <span className="text-primary-600 dark:text-primary-400 font-semibold">integrating AI capabilities into production applications</span>.
+            I don't build ML models from scratch—I build the systems that make AI work in the real world. Currently leading a 4-engineer team at Impacteers, 
+            where we've architected{' '}
+            <span className="text-accent-600 dark:text-accent-400 font-semibold">conversational AI platforms serving 10K+ users</span>{' '}
+            with sub-50ms response times. My expertise is in making AI systems scalable, reliable, and production-ready.
           </p>
         </div>
 
@@ -69,18 +70,28 @@ const About = () => {
               </h3>
               <div className="prose prose-lg dark:prose-invert">
                 <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
-                  Full Stack Engineer with expertise in{' '}
-                  <span className="text-primary-600 dark:text-primary-400 font-semibold">AI-powered applications</span>{' '}
-                  and high-performance distributed systems. Led development of{' '}
-                  <span className="text-accent-600 dark:text-accent-400 font-semibold">real-time conversational platforms</span>{' '}
-                  serving 10K+ users with sub-50ms latency. Proven track record shipping production AI features using LLMs, RAG systems, and modern web technologies.
+                  My journey started with a fascination for building things that work. From{' '}
+                  <span className="text-accent-600 dark:text-accent-400 font-semibold">KLE Society's S Nijalingappa College in Bengaluru</span>{' '}
+                  (BCA 2017-2020) to{' '}
+                  <span className="text-primary-600 dark:text-primary-400 font-semibold">Bhilai Institute of Technology</span>{' '}
+                  (MCA 2020-2022), I focused on practical applications over theoretical knowledge. While others memorized data structures, 
+                  I was building full-stack applications and learning how to make software that users actually want to use.
                 </p>
                 <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
-                  I combine strong{' '}
-                  <span className="text-primary-600 dark:text-primary-400 font-semibold">system design skills</span>{' '}
-                  with product engineering experience to deliver scalable solutions from concept to deployment. Passionate about{' '}
-                  <span className="text-accent-600 dark:text-accent-400 font-semibold">AI/ML innovation</span>{' '}
-                  and building intelligent systems that make a real difference.
+                  At{' '}
+                  <span className="text-primary-600 dark:text-primary-400 font-semibold">Supersourcing</span>{' '}
+                  (Dec 2022 - Nov 2024), I evolved from frontend engineer to technical leader. Shipped 3 production SaaS platforms 
+                  including an AI interview system, ATS, and vendor management tools. I learned NgRx, implemented performance optimizations 
+                  that reduced latency by 60%, and discovered that great engineering is about solving user problems, not just writing clever code.
+                </p>
+                <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
+                  Now at{' '}
+                  <span className="text-primary-600 dark:text-primary-400 font-semibold">Impacteers</span>{' '}
+                  (Dec 2024 - Present), I lead a 4-engineer team building{' '}
+                  <span className="text-accent-600 dark:text-accent-400 font-semibold">production-ready AI systems</span>.
+                  I don't train neural networks—I architect the infrastructure that makes AI work at scale. Real-time speech processing, 
+                  distributed WebSocket connections, multi-layer Redis architectures, and optimization that achieves <100ms audio processing. 
+                  I bridge the gap between AI possibilities and production realities.
                 </p>
               </div>
             </div>
@@ -148,13 +159,13 @@ const About = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <div className="group text-center p-6 bg-gradient-to-br from-primary-100/80 to-primary-200/60 dark:from-primary-900/40 dark:to-primary-800/60 backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-                  10K+
+                  3
                 </div>
                 <div className="text-neutral-600 dark:text-neutral-400 font-medium">
-                  Users Served
+                  Production Platforms
                 </div>
               </div>
               <div className="group text-center p-6 bg-gradient-to-br from-accent-100/80 to-accent-200/60 dark:from-accent-900/40 dark:to-accent-800/60 backdrop-blur-sm border border-accent-200/50 dark:border-accent-700/50 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
@@ -165,6 +176,45 @@ const About = () => {
                   Response Latency
                 </div>
               </div>
+              <div className="group text-center p-6 bg-gradient-to-br from-green-100/80 to-green-200/60 dark:from-green-900/40 dark:to-green-800/60 backdrop-blur-sm border border-green-200/50 dark:border-green-700/50 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 col-span-2 lg:col-span-1">
+                <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-primary-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
+                  100+
+                </div>
+                <div className="text-neutral-600 dark:text-neutral-400 font-medium">
+                  Concurrent Connections
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Education Section */}
+        <div className={`mt-20 ${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '1.2s' }}>
+          <h3 className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent mb-8 text-center">
+            Education
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-white/80 via-primary-50/30 to-accent-50/20 dark:from-neutral-900/80 dark:via-primary-950/30 dark:to-accent-950/20 backdrop-blur-sm border border-primary-200/50 dark:border-primary-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                Master in Computer Application
+              </h4>
+              <p className="text-primary-600 dark:text-primary-400 font-medium mb-1">
+                Bhilai Institute of Technology, Chhattisgarh
+              </p>
+              <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+                2020 - 2022
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-white/80 via-accent-50/30 to-primary-50/20 dark:from-neutral-900/80 dark:via-accent-950/30 dark:to-primary-950/20 backdrop-blur-sm border border-accent-200/50 dark:border-accent-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-2">
+                Bachelor of Computer Application
+              </h4>
+              <p className="text-accent-600 dark:text-accent-400 font-medium mb-1">
+                KLE Society's S Nijalingappa College, Bengaluru
+              </p>
+              <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+                2017 - 2020
+              </p>
             </div>
           </div>
         </div>

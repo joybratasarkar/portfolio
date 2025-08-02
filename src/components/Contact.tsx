@@ -21,13 +21,27 @@ export default function Contact() {
       <div className="relative z-10 max-w-5xl mx-auto">
  
 
+        <div className={`text-center mb-20 ${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-neutral-900 via-primary-600 to-accent-600 dark:from-neutral-100 dark:via-primary-400 dark:to-accent-400 bg-clip-text text-transparent mb-6">
+            Let's Build Something
+          </h2>
+          <p className="text-xl lg:text-2xl text-neutral-600 dark:text-neutral-400 max-w-4xl mx-auto leading-relaxed">
+            Working on something interesting? Need someone who can{' '}
+            <span className="text-primary-600 dark:text-primary-400 font-semibold">ship AI systems that actually work</span>{' '}
+            or help scale your engineering team? I'm always up for a good challenge.
+            Let's talk about what you're building.
+          </p>
+        </div>
+
         <div className={`text-center space-y-12 ${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.6s' }}>
           <div className="bg-gradient-to-br from-white/90 via-primary-50/30 to-accent-50/20 dark:from-neutral-900/90 dark:via-primary-950/30 dark:to-accent-950/20 backdrop-blur-sm border border-primary-200/50 dark:border-primary-800/50 rounded-3xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-500">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent mb-8">
-              Get In Touch
+              What I Can Help With
             </h3>
             <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-12 leading-relaxed">
-              Ready to bring your ideas to life? Let's connect and discuss your next project.
+              Building AI systems that scale • Leading engineering teams • Architecting distributed systems • 
+              Full-stack development with modern frameworks • Turning complex problems into simple solutions.
+              I focus on shipping fast and iterating based on real user feedback.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
@@ -55,7 +69,7 @@ export default function Contact() {
                 </a>
                 
                 <a
-                  href="https://www.linkedin.com/in/joybrata-sarkar-650406169/"
+                  href="https://www.linkedin.com/in/joybrata-sarkar-19649b17a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-3 text-neutral-600 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-all duration-300 hover:bg-primary-50 dark:hover:bg-primary-950/30 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-lg hover:shadow-primary-500/10 transform hover:scale-110"
@@ -63,6 +77,17 @@ export default function Contact() {
                   <span className="sr-only">LinkedIn</span>
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://medium.com/@joybrata007"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-3 text-neutral-600 hover:text-green-600 dark:text-neutral-400 dark:hover:text-green-400 transition-all duration-300 hover:bg-green-50 dark:hover:bg-green-950/30 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg hover:shadow-green-500/10 transform hover:scale-110"
+                >
+                  <span className="sr-only">Medium Blog</span>
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
                   </svg>
                 </a>
               </div>

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
   const [currentWord, setCurrentWord] = useState(0)
-  const words = ['Full Stack AI/ML Engineer', 'Conversational AI Expert', 'RAG Systems Specialist', 'Real-time Systems Engineer']
+  const words = ['Full Stack AI/ML Engineer', 'Real-time Systems Architect', 'Conversational AI Expert', 'Production AI Engineer']
 
   useEffect(() => {
     setMounted(true)
@@ -63,13 +63,12 @@ export default function Hero() {
               
               <div className={`${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.8s' }}>
                 <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl leading-relaxed">
-                  I build{' '}
-                  <span className="text-primary-600 dark:text-primary-400 font-medium">AI-powered applications</span>{' '}
-                  and{' '}
-                  <span className="text-accent-600 dark:text-accent-400 font-medium">conversational systems</span>{' '}
-                  that serve 10K+ users with{' '}
-                  <span className="text-primary-600 dark:text-primary-400 font-medium">sub-50ms latency</span>.
-                  Transforming complex AI challenges into scalable production solutions.
+                  I'm a Full Stack Engineer who makes AI work in production. I don't build ML models—I build the systems that{' '}
+                  <span className="text-primary-600 dark:text-primary-400 font-medium">integrate AI into scalable applications</span>.
+                  Currently leading a 4-engineer team at{' '}
+                  <span className="text-accent-600 dark:text-accent-400 font-medium">Impacteers</span>, where we've architected{' '}
+                  <span className="text-primary-600 dark:text-primary-400 font-medium">conversational AI platforms</span>{' '}
+                  serving 10K+ users with sub-50ms response times. I bridge the gap between AI possibilities and production realities.
                 </p>
               </div>
               
@@ -109,7 +108,7 @@ export default function Hero() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/joybrata-sarkar-650406169/"
+                  href="https://www.linkedin.com/in/joybrata-sarkar-19649b17a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-3 text-neutral-600 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-all duration-300 hover:bg-primary-50 dark:hover:bg-primary-950/30 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-lg hover:shadow-primary-500/10 transform hover:scale-110"
@@ -117,6 +116,17 @@ export default function Hero() {
                 >
                   <svg className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://medium.com/@joybrata007"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-3 text-neutral-600 hover:text-green-600 dark:text-neutral-400 dark:hover:text-green-400 transition-all duration-300 hover:bg-green-50 dark:hover:bg-green-950/30 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg hover:shadow-green-500/10 transform hover:scale-110"
+                  aria-label="Medium Blog"
+                >
+                  <svg className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
                   </svg>
                 </a>
                 <a
@@ -166,7 +176,7 @@ export default function Hero() {
                           AI/ML Engineer
                         </p>
                         <p className="text-sm text-neutral-500 dark:text-neutral-400 font-medium">
-                          10K+ Users • &lt;50ms Latency
+                          Impacteers Platform • 100+ Concurrent • &lt;50ms
                         </p>
                       </div>
                     </div>
@@ -175,7 +185,7 @@ export default function Hero() {
                   {/* Floating technology badges with enhanced animations */}
                   <div className="absolute -top-6 -left-6 group/badge">
                     <div className="px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-sm font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 hover:-rotate-3 transition-all duration-300 cursor-default border-2 border-primary-300/50">
-                      <span className="relative z-10">LangChain</span>
+                      <span className="relative z-10">LangGraph</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-500 rounded-full opacity-0 group-hover/badge:opacity-100 transition-opacity duration-300"></div>
                     </div>
                   </div>
@@ -196,7 +206,7 @@ export default function Hero() {
                   
                   <div className="absolute top-1/2 -left-10 transform -translate-y-1/2 group/badge" style={{ animationDelay: '3s' }}>
                     <div className="px-4 py-2 bg-gradient-to-r from-accent-600 to-primary-500 text-white text-sm font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 hover:rotate-2 transition-all duration-300 cursor-default border-2 border-accent-300/50">
-                      <span className="relative z-10">Redis</span>
+                      <span className="relative z-10">Silero VAD</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-accent-500 to-primary-400 rounded-full opacity-0 group-hover/badge:opacity-100 transition-opacity duration-300"></div>
                     </div>
                   </div>
