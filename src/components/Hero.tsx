@@ -87,6 +87,20 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 </a>
                 <a 
+                  href="/Joybrata_Sarkar_Resume_V5.docx"
+                  download="Joybrata_Sarkar_Resume.docx"
+                  className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-accent-600 via-accent-700 to-primary-600 hover:from-accent-700 hover:via-primary-600 hover:to-primary-700 text-white rounded-xl font-semibold shadow-lg shadow-accent-500/25 hover:shadow-xl hover:shadow-primary-500/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Download Resume
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-accent-500 via-primary-500 to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                </a>
+                <a 
                   href="#contact" 
                   className="group relative inline-flex items-center justify-center px-8 py-4 border-2 border-primary-300 dark:border-primary-700 text-primary-700 dark:text-primary-300 rounded-xl font-semibold hover:bg-primary-50 dark:hover:bg-primary-950/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
                 >

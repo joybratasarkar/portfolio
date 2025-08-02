@@ -1,18 +1,18 @@
- ○ Compiling / ...
-Error: Cannot apply unknown utility class `bg-primary-600`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
-    at onInvalidCandidate (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:18:1312)
-    at ge (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:13:29803)
-    at /home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:18:373
-    at I (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:3:1656)
-    at je (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:18:172)
-    at bi (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:35:780)
-    at async yi (/home/joy/Desktop/portfolio/node_modules/tailwindcss/dist/lib.js:35:1123)
-    at async _r (/home/joy/Desktop/portfolio/node_modules/@tailwindcss/node/dist/index.js:10:3384)
-    at async p (/home/joy/Desktop/portfolio/node_modules/@tailwindcss/postcss/dist/index.js:10:4019)
-    at async Object.Once (/home/joy/Desktop/portfolio/node_modules/@tailwindcss/postcss/dist/index.js:10:4290)
-    at async LazyResult.runAsync (/home/joy/Desktop/portfolio/node_modules/next/node_modules/postcss/lib/lazy-result.js:261:11)
-    at async Span.traceAsyncFn (/home/joy/Desktop/portfolio/node_modules/next/dist/trace/trace.js:154:20)
-    at async /home/joy/Desktop/portfolio/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:54:22
-    at async Span.traceAsyncFn (/home/joy/Desktop/portfolio/node_modules/next/dist/trace/trace.js:154:20)
- ✓ Compiled / in 6.5s (486 modules)
- GET / 200 in 6942ms
+Failed to compile
+
+Next.js (14.2.31) is outdated (learn more)
+./src/components/About.tsx
+Error: 
+  × Unexpected token `section`. Expected jsx identifier
+    ╭─[/home/joy/Desktop/portfolio/src/components/About.tsx:38:1]
+ 38 │   ]
+ 39 │ 
+ 40 │   return (
+ 41 │     <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    ·      ───────
+ 42 │       {/* Animated background */}
+ 43 │       <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-primary-50/20 to-accent-50/10 dark:from-neutral-950 dark:via-primary-950/20 dark:to-accent-950/10"></div>
+ 44 │       
+    ╰────
+
+Caused by:
