@@ -72,7 +72,7 @@ export default function Hero() {
                 </p>
               </div>
               
-              <div className={`flex flex-col sm:flex-row gap-4 ${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '1s' }}>
+              <div className={`flex flex-col sm:flex-row gap-4 items-stretch sm:items-center ${mounted ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '1s' }}>
                 <a 
                   href="#projects" 
                   className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-600 via-primary-700 to-accent-600 hover:from-primary-700 hover:via-accent-600 hover:to-accent-700 text-white rounded-xl font-semibold shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-accent-500/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
@@ -87,8 +87,8 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 </a>
                 <a 
-                  href="/Joybrata_Sarkar_Resume_V5.docx"
-                  download="Joybrata_Sarkar_Resume.docx"
+                  href="/Joybrata_Sarkar_Resume_V5.pdf"
+                  download="Joybrata_Sarkar_Resume_V5.pdf"
                   className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-accent-600 via-accent-700 to-primary-600 hover:from-accent-700 hover:via-primary-600 hover:to-primary-700 text-white rounded-xl font-semibold shadow-lg shadow-accent-500/25 hover:shadow-xl hover:shadow-primary-500/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-2">
